@@ -1,0 +1,28 @@
+public class DiSum {
+    
+    public static int[] Dsum(int[][] matrix) {
+        int primaryDiagonalSum = 0;
+        int secondaryDiagonalSum = 0;
+        
+        // Iterate through the matrix to calculate the diagonal sums
+        for (int i = 0; i < matrix.length; i++) {
+            primaryDiagonalSum += matrix[i][i]; // For primary diagonal
+            secondaryDiagonalSum += matrix[i][matrix.length - i - 1]; // For secondary diagonal
+        }
+        
+        return new int[]{primaryDiagonalSum, secondaryDiagonalSum};
+    }
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 2, 3, 4},
+            {5, 6, 7, 8},
+            {9, 10, 11, 12},
+            {13, 14, 15, 16}
+        };
+        
+        int[] sums = Dsum(matrix);
+        System.out.println("Sum of primary diagonal: " + sums[0]);
+        System.out.println("Sum of secondary diagonal: " + sums[1]);
+    }
+}
