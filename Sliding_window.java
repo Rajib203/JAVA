@@ -3,7 +3,7 @@ public class Sliding_window {
         int[] users={45,4,4,3,2,45,34,46};
         int days=3;
         int maxSum=0;
-        for(int i=0;i<days;i++)
+        for(int i=0;i<days;i++)n
         {
             maxSum+=users[i];
         }
@@ -14,3 +14,4 @@ public class Sliding_window {
         System.out.println(maxSum);
     }
 }
+ 
