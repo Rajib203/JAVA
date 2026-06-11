@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class jack_tcs {
     public static void main(String[] args) {
         Scanner in=new Scanner(System.in);
-        System.out.println("Enter the number of elements in the array");
+        System.out.println("Enter the number");
         int n=in.nextInt();
         if(n<=2)
         {
